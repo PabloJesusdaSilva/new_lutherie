@@ -6,16 +6,18 @@ import {
   Navbar,
   NavList,
   NavItem,
-  NavDescription
+  NavDescription,
+  TitleHeader,
 } from './style';
 
-import ImageBanner from '../../images/banner-header.jpg'
+import ImageBanner from '@/app/images/banner-header.jpg'
+import Logo from '@/app/images/roger-luthier.png'
 
 const Header = () => {
   return(
     <HeaderComponent>
       <Image 
-        alt=""
+        alt="Is this banner image"
         src={ImageBanner}
         width={400}
         height={200}
@@ -26,6 +28,12 @@ const Header = () => {
       <Mask />
 
       <Navbar>
+        <Image 
+          alt="Is this logo image"
+          src={Logo}
+          style={{ width: '220px', height: '220px', marginTop: '-34px' }}
+        />
+
         <NavList>
           <NavItem>
             <NavDescription>
@@ -43,6 +51,10 @@ const Header = () => {
           </NavItem>
         </NavList>
       </Navbar>
+
+      <TitleHeader>
+        Lutheria 
+      </TitleHeader>
     </HeaderComponent>
   );
 }
