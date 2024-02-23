@@ -1,21 +1,14 @@
 import Image from "next/image";
 
-import { 
-  HeaderComponent, 
-  Mask,
-  Navbar,
-  NavList,
-  NavItem,
-  NavDescription,
-  TitleHeader,
-} from './style';
+import './style.scss';
+import MenuDropdown from "../../components/MenuDropdown";
 
 import ImageBanner from '@/app/images/banner-header.jpg'
 import Logo from '@/app/images/roger-luthier.png'
 
 const Header = () => {
   return(
-    <HeaderComponent>
+    <header className="header">
       <Image 
         alt="Is this banner image"
         src={ImageBanner}
@@ -25,37 +18,39 @@ const Header = () => {
         quality={100}
       />
 
-      <Mask />
+      <div className="mask" />
 
-      <Navbar>
+      <nav className="navbar">
         <Image 
           alt="Is this logo image"
           src={Logo}
           style={{ width: '220px', height: '220px', marginTop: '-34px' }}
         />
 
-        <NavList>
-          <NavItem>
-            <NavDescription>
+        <ul className="navlist">
+          <li className="navitem">
+            <span className="navdescription">
               Atelier
-            </NavDescription>
-            <NavDescription>
-              Instrumentos
-            </NavDescription>
-            <NavDescription>
+            </span>
+          </li>
+            <MenuDropdown />
+          <li className="navitem">
+            <span className="navdescription">
               Acessorios
-            </NavDescription>
-            <NavDescription>
+            </span>
+          </li>
+          <li className="navitem">
+            <span className="navdescription">
               Contato
-            </NavDescription>
-          </NavItem>
-        </NavList>
-      </Navbar>
+            </span>
+          </li>
+        </ul>
+      </nav>
 
-      <TitleHeader>
+      <h1 className="titleHeader">
         Lutheria 
-      </TitleHeader>
-    </HeaderComponent>
+      </h1>
+    </header>
   );
 }
 
