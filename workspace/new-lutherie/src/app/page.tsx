@@ -2,29 +2,24 @@
 
 import TemplateDefault from "./template/Default";
 
-import {
-  TheAtelier,
-  CategoryTitle,
-  Title,
-  Description
-} from "@/app/styles/style";
+import './styles/style.scss';
 
 export default function Home() {
   return (
     <TemplateDefault>
-      <TheAtelier>
-        <CategoryTitle>
+      <div className="theAtelier">
+        <h1 className="categoryTitle">
           Lutheria
 
-          <Title>
+          <span className="detail">
             Roger Silva Lutheria
-          </Title>
-        </CategoryTitle>
+          </span>
+        </h1>
 
-        <Description>
+        <p className="description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus harum ipsam hic doloribus assumenda enim impedit. Animi aliquam mollitia voluptatem, rem velit libero doloremque, corporis eveniet pariatur corrupti facilis?
-        </Description>
-      </TheAtelier>
+        </p>
+      </div>
     </TemplateDefault>
   );
 }

@@ -2,10 +2,7 @@ import React from "react";
 
 import Header from "@/app/partials/Header";
 import Footer from "@/app/partials/Footer";
-import {
-  Section,
-  Main
-} from "./style";
+import "./style.scss";
 
 interface ChildrenProps {
   children: React.ReactNode;
@@ -15,11 +12,11 @@ const TemplateDefault = ({ children }: ChildrenProps) => {
   return(
     <>
       <Header />
-        <Section>
-          <Main>
+        <section className="templateSection">
+          <main className="main">
             {children}
-          </Main>
-        </Section>
+          </main>
+        </section >
       <Footer />
     </>  
   )

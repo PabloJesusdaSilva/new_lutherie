@@ -1,11 +1,11 @@
 import React from "react";
-import { FooterComponent } from "./style";
+import "./style.scss";
 
 const Footer: React.FC = () => {
   return(
-    <FooterComponent>
+    <footer className="footer">
 
-    </FooterComponent>
+    </footer>
   );
 }
 

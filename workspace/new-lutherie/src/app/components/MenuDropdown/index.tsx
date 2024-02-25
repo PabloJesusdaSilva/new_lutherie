@@ -1,4 +1,4 @@
-import { FC, ReactNode, RefObject, use, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./style.scss"
 import Link from "next/link";
 
