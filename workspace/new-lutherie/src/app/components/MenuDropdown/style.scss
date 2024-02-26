@@ -5,8 +5,7 @@
   button {
     display: flex;
     align-items: center;
-    height: 72px;
-    margin-top: 3px;
+    margin-top: 2px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -87,7 +86,7 @@
     &.menu {
       transform: scale(1);
       right: 0;
-      top: 72px;
+      top: 64px;
       opacity: 1;
       visibility: visible;
     }

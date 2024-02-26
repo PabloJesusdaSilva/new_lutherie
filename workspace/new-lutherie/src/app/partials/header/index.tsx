@@ -27,20 +27,31 @@ const Header = () => {
           style={{ width: '220px', height: '220px', marginTop: '-34px' }}
         />
 
-        <ul className="navlist">
-          <li className="navitem">
-            <span className="navdescription">
+        <ul className="navList">
+          <li className="navItem">
+            <span className="navDescription">
               Atelier
             </span>
           </li>
+
+          <li className="navItem">
             <MenuDropdown />
-          <li className="navitem">
-            <span className="navdescription">
+          </li>
+
+          <li className="navItem">
+            <span className="navDescription">
               Acessorios
             </span>
           </li>
-          <li className="navitem">
-            <span className="navdescription">
+          
+          <li className="navItem">
+            <span className="navDescription">
+              Trabalhos
+            </span>
+          </li>
+
+          <li className="navItem">
+            <span className="navDescription">
               Contato
             </span>
           </li>

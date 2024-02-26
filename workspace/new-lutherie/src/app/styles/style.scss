@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 .theAtelier {
   display: flex;
   flex-direction: column;
   width: 100%;
 
   .categoryTitle {
+    display: flex;
+    flex-direction: column;
     letter-spacing: 1px;
     font-size: 1.6rem;
     color: #d97706;
 
     .detail {
+      margin-top: 3px;
       font-size: 2.6rem;
       color: #d4d4d8;
     }
@@ -17,8 +22,116 @@
   .description {
     width: 86%;
     margin: 10px 0;
-    letter-spacing: 0.7px;
-    line-height: 25px;
+    letter-spacing: 1.1px;
+    line-height: 26px;
+    font-size: 1.1rem;
     color: #a1a1aa;
+  }
+
+  .imageIlustration {
+    margin-top: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: 10% 80%;
+  }
+}
+
+.ourServices {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px 0 10px 0;
+
+  .categoryTitle {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    color: #d97706;
+
+    .detail {
+      margin-top: 3px;
+      font-size: 2.6rem;
+      color: #d4d4d8;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .card {
+      width: 47%;
+      margin: 20px;
+      padding: 22px 18px;
+      border-radius: 8px;
+      letter-spacing: 1px;
+      transition: all 300ms;
+      background-color: #18181b;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:nth-child(3) {
+        margin-left: 0;
+      }
+
+      &:hover {
+        scale: 1.02;
+      }
+      
+      .title {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #a1a1aa;
+      }
+      
+      .description {
+        line-height: 26px;
+        color: #71717a;
+      }
+    }
+  }
+}
+
+.theLuthier {
+  width: 100%;
+  margin-top: 50px;
+
+  .categoryTitle {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    color: #d97706;
+  
+    .detail {
+      margin-top: 3px;
+      font-size: 2.6rem;
+      color: #d4d4d8;
+    }
+  }
+
+  .luthierDescription {
+    display: flex;
+    margin-top: 10px;
+
+    .about {
+      width: 46%;
+      margin-right: 50px;
+      letter-spacing: 1.2px;
+      line-height: 32px;
+      font-size: 1.2rem;
+      color: #a1a1aa;
+    }
+
+    .imageIlustration {
+      margin-top: 12px;
+      border-radius: 8px;
+      object-fit: cover;
+      object-position: 10% 80%;
+    }
   }
 }

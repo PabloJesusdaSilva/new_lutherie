@@ -20,7 +20,8 @@ const MenuDropdown = () => {
       setMenuTop(`${menuTop}px`);
     } else {
       setMenuRight("0");
-      setMenuTop("70px");
+      setMenuTop("50px");
+
     }
 
     setIsOpen(!isOpen);

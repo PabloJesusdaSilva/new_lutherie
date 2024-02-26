@@ -25,18 +25,18 @@
     width: 100%;
     padding: 10px;
 
-    .navlist {
+    .navList {
       display: flex;
       margin: 0 10px;
       list-style: none;
 
-      .navitem {
-        margin: 16px;
+      .navItem {
+        margin: 16px 0;
         padding: 10px;
         cursor: pointer;
 
-        .navdescription {
-          margin: 0 15px;
+        .navDescription {
+          margin: 0 8px;
           font-size: 1.2rem;
           letter-spacing: 0.8px;
           font-weight: 600;
