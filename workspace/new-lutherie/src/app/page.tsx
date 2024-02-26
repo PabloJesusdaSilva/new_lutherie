@@ -3,6 +3,7 @@
 import Image from "next/image";
 import TemplateDefault from "./template/Default";
 import MapLutherie from "./components/MapLutherie";
+import TitleDescriptionSections from "./components/TitleDescriptionSections";
 
 import ImageLutheria from "@/app/images/violins/violins.jpg";
 import ImageLuthier from "@/app/images/violon.jpg";
@@ -13,13 +14,10 @@ export default function Home() {
   return (
     <TemplateDefault>
       <div className="theAtelier">
-        <h1 className="categoryTitle">
-          Lutheria
-
-          <span className="detail">
-            Roger Silva Lutheria
-          </span>
-        </h1>
+        <TitleDescriptionSections 
+          title="Lutheria"
+          subtitle="Roger Silva Lutheria"      
+       />
 
         <p className="description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus harum ipsam hic doloribus assumenda enim impedit. Animi aliquam mollitia voluptatem, rem velit libero doloremque, corporis eveniet pariatur corrupti facilis?
@@ -34,13 +32,10 @@ export default function Home() {
       </div>
 
       <div className="ourServices">
-        <h1 className="categoryTitle">
-          Serviços
-
-          <span className="detail">
-            O que fazemos?
-          </span>
-        </h1>
+        <TitleDescriptionSections 
+          title="Serviços"
+          subtitle="O que fazemos?"
+        />
 
         <div className="cards">
           <div className="card">
@@ -88,13 +83,10 @@ export default function Home() {
       <MapLutherie />
 
       <div className="theLuthier">
-        <h1 className="categoryTitle">
-          Sobre
-
-          <span className="detail">
-            O Luthier
-          </span>
-        </h1>
+        <TitleDescriptionSections 
+          title="Sobre"
+          subtitle="O Luthier"
+        />
 
         <div className="luthierDescription">
           <p className="about">

@@ -1,6 +1,8 @@
-import "./style.scss";
+"use client";
 
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+
+import "./style.scss";
 
 const MapLutherie = () => {
   const { isLoaded } = useJsApiLoader({

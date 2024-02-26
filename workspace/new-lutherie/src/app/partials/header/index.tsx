@@ -1,10 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
-import './style.scss';
 import MenuDropdown from "../../components/MenuDropdown";
-
 import ImageBanner from '@/app/images/banner-header.jpg'
 import Logo from '@/app/images/roger-luthier.png'
+
+import './style.scss';
 
 const Header = () => {
   return(
@@ -29,9 +32,11 @@ const Header = () => {
 
         <ul className="navList">
           <li className="navItem">
-            <span className="navDescription">
-              Atelier
-            </span>
+            <Link href="/">
+              <span className="navDescription">
+                Atelier
+              </span>
+            </Link>
           </li>
 
           <li className="navItem">
@@ -39,21 +44,27 @@ const Header = () => {
           </li>
 
           <li className="navItem">
-            <span className="navDescription">
-              Acessorios
-            </span>
+            <Link href="">
+              <span className="navDescription">
+                Acessorios
+              </span>
+            </Link>
           </li>
           
           <li className="navItem">
-            <span className="navDescription">
-              Trabalhos
-            </span>
+            <Link href="">
+              <span className="navDescription">
+                Trabalhos
+              </span>
+            </Link>
           </li>
 
           <li className="navItem">
-            <span className="navDescription">
-              Contato
-            </span>
+            <Link href="">
+              <span className="navDescription">
+                Contato
+              </span>
+            </Link>
           </li>
         </ul>
       </nav>
