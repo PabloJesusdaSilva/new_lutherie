@@ -7,6 +7,8 @@ import { CameraIcon } from 'lucide-react';
 import violin1 from "@/app/images/violins/violin-for-sale.jpg";
 import violin2 from "@/app/images/violins/violin2.jpg";
 import violin3 from "@/app/images/violins/violins.jpg";
+import violin4 from "@/app/images/violins/violins.jpg";
+import violin5 from "@/app/images/violins/violins.jpg";
 
 import "./style.scss";
 
@@ -15,6 +17,16 @@ const cards = [
     instrumentName: "Violino Stradvarius",
     image: violin1,
     description: "Violino Modelo Stradvarius 1938",
+  },
+  {
+    instrumentName: "Violino Stradvarius",
+    image: violin2,
+    description: "Violino 1922",
+  },
+  {
+    instrumentName: "Violino Stradvarius",
+    image: violin2,
+    description: "Violino 1922",
   },
   {
     instrumentName: "Violino Stradvarius",
@@ -49,7 +61,7 @@ const Accordion = () => {
               <Image
                 alt="Image product"
                 src={card.image}
-                style={{ width: "46%", height: "150%" }}
+                style={{ width: "100%", height: "150%" }}
                 className="imageIlustration"
               />
 
