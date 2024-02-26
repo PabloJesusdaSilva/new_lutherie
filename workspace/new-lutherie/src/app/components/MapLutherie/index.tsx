@@ -3,6 +3,7 @@
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 import "./style.scss";
+import TitleDescriptionSections from "../TitleDescriptionSections";
 
 const MapLutherie = () => {
   const { isLoaded } = useJsApiLoader({
@@ -17,13 +18,10 @@ const MapLutherie = () => {
 
   return(
     <article className="MapLutherie">
-      <h1 className="categoryTitle">
-        Mapa
-
-        <span className="detail">
-          Endereço
-        </span>
-      </h1>
+      <TitleDescriptionSections 
+        title="Mapa"
+        subtitle="Endereço"
+      />
 
       <div className="map">
         {

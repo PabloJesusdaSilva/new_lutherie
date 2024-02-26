@@ -1,20 +1,6 @@
 .MapLutherie {
   width: 100%;
   margin-top: 50px;
-  
-  .categoryTitle {
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-    font-size: 1.6rem;
-    color: #d97706;
-    
-    .detail {
-      margin-top: 3px;
-      font-size: 2.6rem;
-      color: #d4d4d8;
-    }
-  }
 
   .map {
     width: 100%;

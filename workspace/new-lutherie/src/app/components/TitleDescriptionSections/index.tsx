@@ -10,7 +10,7 @@ const TitleDescriptionSections = ({ title, subtitle}: ITitleProps ) => {
     <h1 className="categoryTitle">
       {title}
 
-      <span className="detail">
+      <span className="subtitle">
         {subtitle}
       </span>
     </h1>
