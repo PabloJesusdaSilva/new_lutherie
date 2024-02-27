@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import TemplateDefault from "@/app/template/Default";
 import TitleDescriptionSections from "@/app/components/TitleDescriptionSections";
-import Accordion from "@/app/components/Accordion";
+import AccordionViolin from "@/app/components/AccordionViolin";
 
 import ImageViolin from '@/app/images/violins/violin-for-sale.jpg'
 
@@ -47,7 +47,7 @@ const VioinsPage = () => {
             subtitle="Modelos"
           />
 
-          <Accordion />
+          <AccordionViolin />
         </section>
       </main>  
     </TemplateDefault>

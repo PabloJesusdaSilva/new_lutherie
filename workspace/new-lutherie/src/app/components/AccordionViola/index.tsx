@@ -30,17 +30,17 @@ const cards = [
   },
   {
     instrumentName: "Violino Stradvarius",
-    image: violin2,
+    image: violin3,
     description: "Violino 1922",
   },
   {
     instrumentName: "Violino Stradvarius",
-    image: violin3,
+    image: violin1,
     description: "Violino Modelo 1988",
   }
 ]
 
-const Accordion = () => {
+const AccordionViolin = () => {
   const [active, setActive] = useState(0);
 
   const handleToggle = (index: number) => setActive(index);
@@ -86,4 +86,4 @@ const Accordion = () => {
   );
 }
 
-export default Accordion;
+export default AccordionViolin;
